@@ -7,6 +7,13 @@ require 'Triangle.php';
 require 'Person.php';
 require 'Policier.php';
 
-//echo (new Circle)->aire() . PHP_EOL;
+class Boom
+{
 
-echo (new Cercle)->aire() . PHP_EOL;
+    public function test($form)
+    {
+        echo $form->aire();
+    }
+}
+
+(new Boom)->test(new Cercle);
